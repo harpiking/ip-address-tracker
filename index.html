@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Leaflet's Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+  <section class="container">
+<div class="header">
+  <div class="headerContent">
+ <h2>IP Address Tracker</h2>
+ <span class="valued">
+ <input class="ipInput" type="text" value="" placeholder=" Search for any IP address or domain">
+ <button class="btn">
+ <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+</button>
+</span>
+ </div>
+</div>
+ 
+<div class="card">
+  <div class="left">
+    <h6>IP Address</h6>
+    <h5 class="ipAdd"></h5>
+  </div>
+  <div  class="left">
+    <h6>Location</h6>
+    <h5 class="loc"></h5>
+  </div>
+  <div  class="left">
+  <h6>Timezone</h6>
+    <h5 class="tZ"> </h5> <!-- add offset value dynamically using the API -->
+  </div>
+  <div class="left">
+    <h6 >ISP</h6>
+    <h5 class="isp"></h5>
+  </div>
+</div>
+
+<div class="map"  id="mapid">
+  <img class="firstMap" src="https://i.pinimg.com/originals/7f/14/2d/7f142d681e13785e5ee50accd6692a7b.jpg" alt="map">
+
+</div>
+
+</section>
+
+  <script src="main.js"></script>
+</body>
+</html>

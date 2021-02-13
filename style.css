@@ -1,0 +1,126 @@
+body{
+    padding:0;
+    margin:0;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+h6{
+    color: hsl(0, 0%, 59%);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 12px;
+}
+h5{
+    margin-block-start: 10px;
+    margin-block-end: 0;
+    color: hsl(0, 0%, 17%);
+}
+.header{
+    background-image: url("images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    color: #fff;
+}
+
+.card{
+    width: 1000px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px 0 10px 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 3;
+    left: 15%;
+    top: 23%;
+    box-shadow: 2px 2px 5px -4px hsl(0, 0%, 59%);
+}
+.left{
+    border-right: solid 1px hsl(0, 0%, 59%);
+    padding-left: 30px;
+}
+.ipInput{
+    padding: 8px;
+    width: 30%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: solid 1px hsl(0, 0%, 17%);
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+
+}
+.valued{
+    display: flex;
+    place-content: center;
+}
+.btn{
+    padding: 7px 10px;
+    margin-left: -4px;
+    background-color: hsl(0, 0%, 17%);
+    border: solid 1px hsl(0, 0%, 17%);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    outline: none;
+}
+#mapid {
+     height: 90vh;
+     position: relative;
+     z-index: 0;
+ }
+.location{
+    position: relative;
+    z-index: 33;
+    justify-content: center;
+    align-self: center;
+}
+.firstMap{
+width: 100%;
+height: 100%;
+}
+
+@media only screen and (max-device-width: 768px){
+    .header{
+        padding-bottom: 90px;
+    }
+    .card{
+        width: 410px;
+        grid-template-columns: 1fr;
+        padding: 20px 15px;
+        position: absolute;
+        left: 21%;
+        top: 18%;
+        text-align: center;
+    }  
+    .left{
+        border-right: none;
+        padding-left: 0;
+    }
+    .ipInput{
+        padding: 15px 10px;
+        width: 50%;    
+    }
+}
+@media only screen and (max-device-width: 414px){
+    .card{
+        width: 220px;
+        left: 20%;
+        top: 23%;
+    }  
+    .ipInput::placeholder{
+      font-size: 11px;   
+    }
+}
+@media only screen and (max-device-width: 375px){
+    .card{
+        width: 207px;
+        left: 18%;
+        top: 22%;
+    }  
+
+}
