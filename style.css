@@ -122,5 +122,11 @@ height: 100%;
         left: 18%;
         top: 24%;
     }  
+    @media only screen and (max-device-width: 320px){
+    .card{
+        width: 180px;
+        left: 18%;
+        top: 30%;
+    }  
 
 }
